@@ -1,0 +1,27 @@
+body {
+  margin: 15px auto;
+}
+.container {
+  border: 5px solid black;
+}
+.row {
+  border: 3px solid red;
+}
+.green {
+  background: rgba(8, 240, 151, 0.897);
+}
+.pink {
+  background: pink;
+}
+.orange {
+  background: orange;
+}
+.blue {
+  background: #007bff;
+}
+.grey {
+  background: lightgrey;
+}
+.yellow {
+  background: rgb(229, 255, 0);
+}

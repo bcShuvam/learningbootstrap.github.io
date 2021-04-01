@@ -1,0 +1,40 @@
+body {
+  margin: 15px auto;
+}
+.container {
+  border: 5px solid black;
+}
+.col-md-6 {
+  border: 3ps solid red;
+}
+h1 {
+  background: var(--bs-purple);
+}
+.pink {
+  background: pink;
+}
+col-md-4 a:hover {
+  color: rgb(26, 202, 26);
+}
+.fa-car:before {
+  content: "\f1b9";
+}
+/* .row {
+  border: 3px solid red;
+} */
+/* .green {
+  background: rgba(8, 240, 151, 0.897);
+}
+
+.orange {
+  background: orange;
+}
+.blue {
+  background: #007bff;
+}
+.grey {
+  background: lightgrey;
+}
+.yellow {
+  background: rgb(229, 255, 0);
+} */

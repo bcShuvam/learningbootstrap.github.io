@@ -1,0 +1,21 @@
+.container {
+  border: 5px solid black;
+}
+.row {
+  border: 3px solid red;
+}
+.green {
+  background: rgb(0, 128, 79);
+  font-size: 16px;
+}
+.pink {
+  background: pink;
+  font-size: 24px;
+}
+.orange {
+  background: orange;
+}
+.blue {
+  background: #007bff;
+  font-size: 12px;
+}

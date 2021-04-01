@@ -1,0 +1,5 @@
+#secondjumbo {
+  background: url("../images/banner.jpg") no-repeat;
+  /* background-image: url(../images/banner.jpg) no-repeat; */
+  background-size: cover;
+}

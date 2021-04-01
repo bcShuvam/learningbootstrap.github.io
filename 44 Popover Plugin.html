@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Plugin</title>
+    <link rel="shortcut icon" type="image/png" href="images/bootstrap.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="42style.css" />
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover({
+                html : true
+            });
+        });
+        $(function(){
+            $('#example').popover({
+                html : true,
+                title : "Popover Title",
+                content : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                placement: "bottom",
+                // delay : {"show":500,"hide":200}
+            }); 
+
+            $('#showbtn').click(function () {
+                $("#example").tooltip('show');
+            });
+
+            $('#hidebtn').click(function () {
+                ('#example').popover('hide');
+            });
+
+            $('#togglebtn').click(function () {
+                ('#example').popover('toggle');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container mb-3">
+        <h2 class="text-center py-3">Bootstrap Popover Plugin</h2>
+        <div class="row py-5">
+            <div class="col-md-7 my-5 mx-auto">
+                <button class="btn btn-primary" data-placement="left" data-toggle="popover" title="Popover Title" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+                    Popover
+                </button>
+                <button class="btn btn-primary" data-placement="top" data-toggle="popover" title="<h2>Popover Title</h2>" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+                    Popover
+                </button>
+                <button class="btn btn-primary" data-placement="bottom" data-toggle="popover" title="Popover Title 2" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+                    Popover
+                </button>
+                <button id="example" class="btn btn-primary">
+                    Popover
+                </button>
+                <button id="showbtn" class="btn btn-danger">
+                    Show
+                </button>
+                <button id="hidebtn" class="btn btn-danger">
+                    Hide
+                </button>
+                <button id="togglebtn" class="btn btn-warning">
+                    Toggle
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
